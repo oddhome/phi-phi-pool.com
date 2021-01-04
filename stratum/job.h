@@ -10,9 +10,11 @@ struct YAAMP_JOB_VALUES
 	char coinbase[16*1024];
 	char merkleroot_be[1024];
 
-	char header[1024];
-	char header_be[1024];
-	unsigned char header_bin[1024];
+
+
+	char header[EQUI_HEADER_SIZE * 2];
+	char header_be[EQUI_HEADER_SIZE * 2];
+	unsigned char header_bin[EQUI_HEADER_SIZE];
 
 	char hash_hex[1024];
 	char hash_be[1024];
