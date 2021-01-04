@@ -12,8 +12,8 @@ struct YAAMP_JOB_VALUES
 
 
 
-	char header[EQUI_HEADER_SIZE * 2];
-	char header_be[EQUI_HEADER_SIZE * 2];
+	char header[EQUI_HEADER_SIZE * 2 + 1];      // +1 bcz of `/0`
+	char header_be[EQUI_HEADER_SIZE * 2 + 1];   // +1 bcz of `/0`
 	unsigned char header_bin[EQUI_HEADER_SIZE];
 
 	char hash_hex[1024];
