@@ -5,6 +5,7 @@ class YAAMP_REMOTE;
 class YAAMP_COIND;
 class YAAMP_COIND_AUX;
 
+#define EQUI_HEADER_SIZE (4+32+32+32+4+4+32 + 1344 + 3)
 struct YAAMP_JOB_VALUES
 {
 	char coinbase[16*1024];
